@@ -27,19 +27,14 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost joblib statsmod
 
 ## How to Run
 
-Option 1 - Run full pipeline:
-python main.py
+Run the notebooks in the following order:
 
-Option 2 - Run notebooks individually in order:
 1. src/data_loader.ipynb — Load and explore raw data
-2. src/preprocessing.ipynb — Clean data and create splits
-3. src/feature_engineering.ipynb — Engineer features
-4. src/train.ipynb — Train and tune models
-5. src/evaluation.ipynb — Evaluate final model on test set
-6. src/segmentation.ipynb — Build segmentation model
-
-Note on Data Files:
-The raw data files (census-bureau.data, census-bureau.csv) are excluded from this repository due to file size limits. Download them from the UCI Machine Learning Repository and place them in the data/ folder before running.
+2. src/preprocessing.ipynb — Clean data, handle missing values, remove duplicates, create train/val/test splits
+3. src/feature_engineering.ipynb — One-hot encoding, normalization, weight extraction
+4. src/train.ipynb — Train Logistic Regression, Random Forest, Gradient Boosting, XGBoost
+5. src/evaluation.ipynb — Final model evaluation on test set, confusion matrix, ROC curves
+6. src/segmentation.ipynb — KMeans clustering, cluster profiling, marketing recommendations
 
 ---
 

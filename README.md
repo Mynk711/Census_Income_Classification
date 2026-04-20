@@ -18,9 +18,10 @@ joblib
 statsmodels
 jupyter
 nbconvert
+scipy
 
 Install all dependencies:
-pip install pandas numpy scikit-learn matplotlib seaborn xgboost joblib statsmodels jupyter nbconvert
+pip install pandas numpy matplotlib seaborn scikit-learn xgboost joblib statsmodels jupyter nbconvert scipy
 
 ---
 

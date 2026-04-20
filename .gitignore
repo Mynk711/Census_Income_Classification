@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.pkl
+output/models/*.pkl
+data/census-bureau.csv
+data/census-bureau.data
